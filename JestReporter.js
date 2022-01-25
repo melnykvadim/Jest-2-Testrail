@@ -41,7 +41,7 @@ class Reporter {
       .addRun(projectId, {
         suite_id: suiteId,
         name: name,
-        include_all: false,
+        include_all: true,
         case_ids: this.caseids,
       })
       .then((r) => {
