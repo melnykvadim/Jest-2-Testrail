@@ -50,9 +50,8 @@ class Reporter {
           .addResultsForCases(r.id, {
             results: this.testRailResults,
           })
-          .then(api.closeRun(r.id))
           .then(() => {
-            console.log('Added test results and closed test run');
+            console.log('Added test results');
           })
           .catch((error) => {
             console.log(error.message || error);
